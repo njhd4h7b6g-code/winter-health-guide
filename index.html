@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>2026冬季养生 · 企业健康文化落地行动指南</title>
+<style>
+:root{--green:#2f6b4f;--green-d:#244f3b;--warm:#c9772f;--bg:#faf7f2;--card:#ffffff;--ink:#2b2b2b;--mut:#6b6b6b;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+.topnav{position:sticky;top:0;z-index:100;background:var(--green-d);padding:10px 12px;display:flex;gap:8px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.topnav::-webkit-scrollbar{display:none}
+.topnav a{color:#fff;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:4px 14px;font-size:13px;text-decoration:none;flex:0 0 auto}
+.topnav a:hover,.topnav a:active{background:rgba(255,255,255,.32)}
+.hero{background:linear-gradient(160deg,#387a5c,var(--green-d));color:#fff;padding:46px 20px 38px;text-align:center}
+.hero h1{margin:0;font-size:24px;font-weight:700;letter-spacing:1px}
+.hero .chain{margin-top:12px;font-size:14px;opacity:.92;letter-spacing:.5px}
+.hero .period{display:inline-block;margin-top:16px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.32);border-radius:999px;padding:6px 18px;font-size:14px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 110px}
+.toc{background:var(--card);border-radius:14px;padding:16px 18px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.toc-title{font-weight:700;color:var(--green);margin-bottom:8px;font-size:15px}
+.toc ul{list-style:none;margin:0;padding:0}
+.toc li{margin:2px 0}
+.toc-2 a{color:var(--ink);font-weight:600;text-decoration:none;font-size:15px}
+.toc-3 a{color:var(--mut);text-decoration:none;font-size:14px;padding-left:14px;display:block}
+.toc a:hover{color:var(--green)}
+.sec{margin:30px 0}
+h2{color:var(--green);font-size:21px;border-left:5px solid var(--green);padding-left:12px;margin:26px 0 14px}
+h3{color:var(--green-d);font-size:18px;margin:20px 0 10px}
+h4{font-size:16px;margin:16px 0 6px;color:var(--ink)}
+h4.tip{background:#eef5f0;border-left:4px solid var(--warm);padding:8px 12px;border-radius:0 8px 8px 0;color:var(--green-d);font-weight:700}
+p{margin:10px 0}
+.note{font-size:13px;color:var(--mut);background:#f1ede6;padding:10px 12px;border-radius:10px}
+.bullets{list-style:none;margin:8px 0;padding:0}
+.bullets li{position:relative;padding:5px 0 5px 22px;border-bottom:1px dashed #ececec}
+.bullets li:before{content:"❄";position:absolute;left:0;top:5px;color:var(--green);font-size:13px}
+.callout{background:#f4f9f5;border:1px solid #d8e8df;border-radius:14px;padding:14px 16px;margin:14px 0}
+.callout-h{font-weight:700;color:var(--green-d);margin-bottom:6px}
+.callout p{margin:6px 0;font-size:15px}
+.sp{height:6px}
+.route{background:var(--green-d);color:#fff;font-weight:700;padding:8px 12px;border-radius:8px;margin:18px 0 10px;font-size:15px}
+.risk{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;margin:0 4px 2px 0;vertical-align:middle;white-space:nowrap}
+.risk-A{background:#e6f4ea;color:#1d7a43;border:1px solid #b7e0c5}
+.risk-B{background:#fdf0d5;color:#b06a00;border:1px solid #f0d49a}
+.risk-C{background:#fde8e8;color:#c0392b;border:1px solid #f3b6b6}
+.risk-defs{display:flex;flex-direction:column;gap:12px;margin:14px 0}
+.risk-def{background:var(--card);border-radius:12px;padding:12px 14px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.risk-def p{margin:6px 0 0;font-size:14px}
+.day{background:var(--card);border-radius:10px;padding:10px 12px;margin:8px 0;box-shadow:0 1px 5px rgba(0,0,0,.04);border-left:3px solid var(--warm)}
+.day b{color:var(--green-d)}
+.tl{position:relative;margin:14px 0 0 8px;padding-left:26px;border-left:3px solid #d9cdb8}
+.tl-item{position:relative;padding:0 0 22px 14px}
+.tl-item:last-child{padding-bottom:4px}
+.tl-dot{position:absolute;left:-35px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--warm);border:3px solid #fff;box-shadow:0 0 0 2px var(--warm)}
+.tl-date{font-weight:700;color:var(--green-d);font-size:16px}
+.tl-item p{margin:4px 0 0;font-size:15px}
+footer{text-align:center;color:var(--mut);font-size:12px;margin-top:40px}
+details.fold summary{list-style:none;cursor:pointer}
+details.fold summary::-webkit-details-marker{display:none}
+details.fold summary h2{display:inline;margin:0}
+details.fold summary:after{content:"展开 ▾";float:right;color:var(--mut);font-size:13px;font-weight:400;padding-top:6px}
+details.fold[open] summary:after{content:"收起 ▴"}
+.float-tip{position:fixed;left:0;right:0;bottom:0;z-index:99;background:#fff8ec;border-top:1px solid #f0d49a;color:#8a5a00;font-size:13px;padding:8px 14px;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 -2px 8px rgba(0,0,0,.06)}
+.float-tip button{background:none;border:1px solid #d9b878;border-radius:999px;color:#8a5a00;font-size:12px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+</style>
+</head>
+<body>
+<nav class="topnav">
+<a href="#sec-2">时间节点</a><a href="#sec-3">养生要诀</a><a href="#sec-5">护心专题</a><a href="#sec-10">起居饮食</a><a href="#sec-11">外治手作</a><a href="#sec-12">亲子专题</a><a href="#sec-13">避坑辨证</a><a href="#sec-14">活动手册</a><a href="#sec-15">75天提示</a>
+</nav>
+<header class="hero">
+<h1>2026冬季养生 · 企业健康文化落地行动指南</h1>
+<div class="chain">立冬→小雪→大雪→冬至→小寒→大寒 · 全冬季完整版</div>
+<div class="period">🌱 11月7日 —— 1月20日 · 75天冬季养藏黄金期</div>
+</header>
+<div class="wrap">
+<div class="callout"><div class="callout-h">版本说明（融合版）</div><p>本指南为企业冬季健康文化落地方案，内容融合多方中医养生知识与沙龙资料，按<strong>风险分级</strong>标注，方便健康管理员按需转发员工。</p><p>风险等级：<span class="risk risk-A">风险A · 安全可发</span><span class="risk risk-B">风险B · 谨慎转发（请附“个人体质不同，操作前请咨询中医师”）</span><span class="risk risk-C">风险C · 明显医疗行为·不放</span></p></div>
+<section id="sec-2" class="sec"><h2>一、关键时间节点</h2>
+<div class="tl">
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">11月7日 · 立冬</div><p>冬之始，阳气潜藏，水始冰、地始冻。秋"收"转冬"藏"的切换点。</p></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">11月22日 · 小雪</div><p>寒未深、雪未大，冷意明显，空气渐干冷。收藏好秋冬衣物。</p></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">12月7日 · 大雪</div><p>雪盛，仲冬开启，寒气最重时段正式到来。</p></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">12月21日 · 冬至</div><p>白昼最短、一阳生，数九开始，温补最佳起点。</p></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">1月5日 · 小寒</div><p>冷气积久，进入一年最冷时段。</p></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">1月20日 · 大寒</div><p>二十四节气之末，寒至极、待春回。</p></div>
+</div>
+<div class="callout"><div class="callout-h">《黄帝内经·四气调神大论》："冬三月，此谓闭藏。水冰地坼，无扰乎阳，早卧晚起，必待日光，使志若伏若匿，若有私意，若已有得；去寒就温，无泄皮肤，此冬气之应，养藏之道也。逆之则伤肾。"</div></div>
+<div class="callout"><div class="callout-h">点睛：立冬养生三字＝<strong>勿扰阳</strong>；冬至"一阳生，助阳帮助阳气火苗生发"。</div></div>
+<div class="callout"><div class="callout-h">💡 一句话：冬天养生的根，是把阳气藏好、不扰动它——下面所有要诀与妙招，都是这一条的展开。</div></div>
+<p><strong>❄️ 本阶段总原则</strong></p>
+<p>从秋天的"收"转向冬天的"藏"——藏阳养肾、温补防寒、无扰乎阳。冬季起点以"立冬"为界，至少覆盖到大寒（75天养藏黄金期）；再往后延展，便是春节团圆与早春养护。</p>
+</section>
+<section id="sec-3" class="sec"><details class="fold"><summary><h2>二、冬季养生六大要诀</h2></summary>
+<h4 class="tip">❄️ ① 藏阳</h4>
+<p>冬主闭藏，不宜过度发散</p>
+<p></p>
+<ul class="bullets"><li>早卧晚起、必待日光（日出后再出门锻炼，不摸黑晨练）</li></ul>
+<ul class="bullets"><li>减少大汗淋漓，运动以微汗为度，汗后避风</li></ul>
+<ul class="bullets"><li>情绪宜静藏，少耗散，减少大喜大怒</li></ul>
+<ul class="bullets"><li>姜枣茶、醋泡姜立冬后恢复（秋季处暑后暂停，冬天回来了）</li></ul>
+<h4 class="tip">🔥 ② 温补</h4>
+<p>冬令进补，重在温养</p>
+<p></p>
+<ul class="bullets"><li>黑色食物补肾（黑芝麻、黑豆、桑葚、黑木耳）</li></ul>
+<ul class="bullets"><li>温性肉类：羊肉、牛肉、鸡肉；当归生姜羊肉汤为冬季第一暖汤</li></ul>
+<ul class="bullets"><li>根茎类当季（山药、萝卜、莲藕、红薯），顺气养身</li></ul>
+<ul class="bullets"><li>进补有度，虚不受补者先调脾胃再温补</li></ul>
+<ul class="bullets"><li>立冬起可"每天早起吃葱或洋葱"——助阳暖胃、有助防脑血管问题（特色主张，与常规养生不同，贴源且实用）· <span class="risk risk-A">风险A · 安全可发</span></li></ul>
+<ul class="bullets"><li>冬季可"适当减少植物油摄入、严格断离乳制品"——顺应冬藏、减轻脾胃与痰湿负担（主张，企业落地时可作为可选饮食建议，不必强求）· <span class="risk risk-A">风险A · 安全可发</span></li></ul>
+<h4 class="tip">🧥 ③ 防寒</h4>
+<p>寒气最盛，重点护住三处</p>
+<p></p>
+<ul class="bullets"><li>头颈（帽、围巾）、腰腹（护腰）、脚（暖鞋厚袜）三处必护</li></ul>
+<ul class="bullets"><li>三九天（冬至后）最冷，添衣要"分层"，方便增减</li></ul>
+<ul class="bullets"><li>空调暖气不直吹、温度别太高（约20℃），室内加湿</li></ul>
+<ul class="bullets"><li>老人、儿童、阳虚、心脑血管、关节病者重点防护</li></ul>
+<ul class="bullets"><li>胸背最易受寒：穿衣的顺序自上而下、脱衣的顺序自下而上（胸和背受寒最伤）；卧室挂门帘、关上门窗缝隙，风被称为"贼风"、无孔不入 · <span class="risk risk-A">风险A · 安全可发</span></li><li>冬日护心先从防寒起：头颈（围巾帽子）、腰腹（加厚内衣）、足部（羊毛袜+防滑鞋）重点护；采用"内排汗、中保暖、外防风"三层穿衣，随温差增减；晨起先在床上活动四肢5分钟、静坐2–3分钟再起身，防体位性低血压。· <span class="risk risk-A">风险A · 安全可发</span></li></ul>
+<h4 class="tip">🫘 ④ 养肾</h4>
+<p>肾主封藏，冬气通于肾</p>
+<p></p>
+<ul class="bullets"><li>五色黑入肾，多食黑色之品；腰为肾之府</li></ul>
+<ul class="bullets"><li>常搓腰（肾俞）温煦命门，八段锦"两手攀足固肾腰"常练</li></ul>
+<ul class="bullets"><li>减少夜尿、不熬夜伤肾、节欲藏精</li></ul>
+<ul class="bullets"><li>肾足则畏寒、乏力、腰酸皆缓</li></ul>
+<ul class="bullets"><li>盐水核桃（益肾填髓）：核桃仁淡盐水浸泡一夜，次日卯时(5–7点)淡盐水煮熟，口中咀嚼成汤分三口咽下，老人小孩皆适用 · <span class="risk risk-A">风险A · 安全可发</span></li></ul>
+<ul class="bullets"><li><strong>护肾暖身操（每日5分钟组合）</strong>：① 搓腰固肾——双手搓热捂肾俞（第二腰椎旁开两指），上下搓100下至腰部发热，早晚各一次；② 八段锦"两手攀足固肾腰"×6–8次；③ 拍八虚（肘窝/腋/髀/腘）各30秒。工间上午10:30 / 下午15:30 做 · <span class="risk risk-A">风险A · 安全可发</span></li></ul>
+<ul class="bullets"><li><strong>暖身泡脚方</strong>：艾叶15g+生姜3片+花椒10粒煮水兑温，泡20–40分钟至全身微微温暖、额角微汗；先熏后泡、水位到小腿1/3，不热即结束、不必续水；虚寒重者加红花少许 · <span class="risk risk-A">风险A · 安全可发</span></li></ul>
+<ul class="bullets"><li><strong>三九艾灸四大穴（冬至后 · 需专业辨证）</strong>：<strong>命门</strong>（温肾壮阳）、<strong>关元</strong>（培元固本）、<strong>足三里</strong>（温阳益气）、<strong>大椎</strong>（提升免疫），温和为宜、不宜久；总原则"助阳内藏而勿用、温而不热"，可辨证加选阳陵泉、中脘。⚠️ 体热、阴虚、孕早期、皮肤破损、高热等不宜；建议由有资质人员指导或到中医馆施灸，切勿自行盲灸 · <span class="risk risk-B">风险B · 谨慎转发，需专业辨证</span></li></ul>
+<h4 class="tip">🍲 ⑤ 饮食</h4>
+<p>宜温忌寒，少咸多温</p>
+<p></p>
+<ul class="bullets"><li>姜枣茶回归、晨起含薄片姜（虚寒体）</li></ul>
+<ul class="bullets"><li>温粥热汤为主，忌冰饮生冷瓜果</li></ul>
+<ul class="bullets"><li>适当辛温（葱、姜、蒜）解表散寒，但不过散</li></ul>
+<ul class="bullets"><li>冬吃萝卜夏吃姜；萝卜顺气、白菜养身；少咸（咸伤肾）</li></ul>
+<h4 class="tip">🌙 ⑥ 起居</h4>
+<p>早卧晚起，必待日光</p>
+<p></p>
+<ul class="bullets"><li>亥时(21–23)睡、卯时后可起，可比秋更晚起</li></ul>
+<ul class="bullets"><li>泡脚延长至20–40分钟、泡到全身暖</li></ul>
+<ul class="bullets"><li>冬季适度艾灸（命门、关元、足三里）温补</li></ul>
+<ul class="bullets"><li>室内每日通风一次，不紧闭门窗</li></ul>
+<p>💡 <strong>转发员工一句话</strong>：冬天不是"补得猛"就好，而是"藏得住、暖得稳、补得准"——早卧晚起、护好三处、一碗热汤最养人。</p>
+</details></section>
+<section id="sec-5" class="sec"><details class="fold"><summary><h2>三、冬日护心专题</h2></summary>
+<div class="callout"><div class="callout-h">本专题聚焦"冬季心脑血管防护"。冬季寒邪收引、气血凝滞，心血管事件高发；以下以"认识风险 + 日常防护 + 识别先兆"为主，重在预防与科普，<strong>不替代诊疗</strong>。</div></div>
+<h3>1. 为什么冬季要护心（风险认识 · <span class="risk risk-A">风险A · 安全可发</span>）</h3>
+<ul class="bullets"><li>寒邪内侵：低温使血管收缩、血压波动，加重心脏负荷；温差剧烈易诱发心绞痛、心梗。</li><li>血液变稠：冬季饮水偏少、活动减少，血液黏稠、血流减慢，血栓风险升高。</li><li>中医认识：心主血脉、肾主元气；冬不养藏、阳气亏虚，最易"气滞血瘀、气虚血瘀"。</li><li>💡 转发一句话：冬天护好心，先暖"头颈腰足"、少熬夜、慢起身——防寒就是护血管。</li></ul>
+<h3>2. 日常防护要点（起居 · <span class="risk risk-A">风险A · 安全可发</span>）</h3>
+<ul class="bullets"><li>重点部位保暖：头颈（围巾帽子）、腰腹（加厚内衣）、足部（羊毛袜+防滑鞋）；避免寒气从风池、大椎等穴侵入。</li><li>分层穿衣法：内排汗、中保暖、外防风，随温差动态增减。</li><li>晨起缓动：醒后先床上活动四肢5分钟，穿衣静坐2–3分钟再起身，防体位性低血压。</li><li>室内温湿度：卧室18–20℃、客厅20–22℃；加湿保持40–60%；避免电热毯/暖宝宝长时间贴身（防血液再分配加重心负）。</li><li>子午觉：子时大睡（23点前）、午时小憩（11–13点间20分钟）；睡前按内关、涌泉各3分钟平肝潜阳、引火归元。</li></ul>
+<h3>3. 护心穴位与代茶饮（<span class="risk risk-B">风险B · 谨慎转发</span>）</h3>
+<ul class="bullets"><li>穴位按摩（每日3–5分钟，以酸胀为度）：<strong>内关</strong>（腕横纹上2寸，宁心安神、缓解胸闷）、<strong>涌泉</strong>（足底前1/3，引火归元、助眠）、<strong>足三里</strong>（外膝眼下3寸，健脾化湿）。⚠️ 仅作日常保健，胸闷持续请就医。</li><li>代茶饮（建议咨询中医师后饮用）：<strong>山楂决明饮</strong>（焦山楂15g+决明子10g，助血管弹性）、<strong>三七丹参茶</strong>（三七粉3g+丹参10g，血脂偏高者晨起饮）、<strong>瓜蒌薤白茶</strong>（全瓜蒌20g+薤白15g）。⚠️ 含药材、有禁忌；孕妇/服药者禁，不替代治疗。</li><li>运动时间：冬季最佳上午9–11点或下午3–5点；冠心病避开清晨6–8点高峰；以"微汗不喘"为度。八段锦"双手托天理三焦""两手攀足固肾腰"每日3–5遍，通经络防淤堵。</li></ul>
+<h3>4. 先兆识别与就医提示（<span class="risk risk-A">风险A · 安全可发</span>+<span class="risk risk-C">风险C · 不指导操作</span>）</h3>
+<ul class="bullets"><li>识别信号：胸骨后压榨性疼痛放射至左肩/下颌、伴冷汗（警惕心绞痛/心梗）；突发眩晕、言语不清、单侧无力（警惕中风）；无诱因持续乏力、夜间阵发性呼吸困难（警惕心衰）。</li><li>✅ 出现以上任一，<strong>立即休息、原地不动、拨打120 / 就近就医</strong>。</li><li>⛔ <span class="risk risk-C">风险C · 明显医疗行为·不放</span>本专题不收录"舌下含服硝酸甘油/速效救心丸""急救针刺/掐人中"等具体操作，不指导用药与急救手法；急症一律以正规医疗为准（与心梗文处理口径一致）。</li></ul>
+</details></section>
+<section id="sec-10" class="sec"><details class="fold"><summary><h2>四、起居·饮食·情志（内含🧧春节团圆 · 过年吃不胖的智慧）</h2></summary>
+<p>🌙 起居</p>
+<p>🍲 饮食</p>
+<p>💭 情志</p>
+<h4>🌙 冬季起居</h4>
+<p><strong>睡眠：</strong>早卧晚起、必待日光；亥时(21–23)睡、日出(约卯时)后起；可较秋更晚起，不摸黑晨练</p>
+<p><strong>添衣：</strong>头颈/腰腹/脚三处重点护；三九天分层穿衣，热了脱冷了加 低</p>
+<p><strong>泡脚：</strong>20–40分钟、泡到全身暖、泡完擦干；虚寒体加艾叶/生姜/花椒 低</p>
+<p>💡 转发一句话：早卧晚起、等太阳出来再锻炼——冬天多睡半小时，比吃补药实在。</p>
+<p>💡 转发一句话（补）：有高血压、心脑血管基础病的同事，冬季保暖与慢起身格外重要——更多要点见本版「四、冬日护心专题」。</p>
+<h4>🍲 冬季饮食（温补暖身）</h4>
+<ul class="bullets"><li>温补汤</li></ul>
+<p><strong>当归生姜羊肉汤：</strong>羊肉500g+当归15g+生姜30g，炖煮温补散寒，虚寒手脚凉、畏风者最宜 中</p>
+<p><strong>黄芪山药粥：</strong>黄芪15g+山药（干品或鲜）30g+小米；气虚乏力、易感冒的冬天常喝 低</p>
+<ul class="bullets"><li>暖身茶饮（带用量）</li></ul>
+<p><strong>姜枣茶：</strong>生姜3片+红枣5枚煮水，立冬后回归，温中散寒、补血 低</p>
+<p><strong>桂圆红枣茶：</strong>桂圆8粒+红枣5片煮水，补血养心安神，睡不好、手脚凉者宜 低</p>
+<p><strong>陈皮姜枣茶：</strong>姜枣茶加陈皮5g，理气暖胃化痰，胃胀怕冷痰湿重者宜 低</p>
+<ul class="bullets"><li>食疗加料（融合补强）</li></ul>
+<p><strong>功夫萝卜</strong><span class="risk risk-A">风险A · 安全可发</span>：冬吃萝卜清补、通顺不滞；恩师主教诲"病后清补不可大肆进补"，冬至根部蔬菜封藏力达顶点，萝卜皮/缨/籽/汁全身是宝。可作大雪/冬至节气群话题素材。</p>
+<p><strong>围炉煮茶·按体质</strong><span class="risk risk-B">风险B · 谨慎转发</span>：大雪围炉按三类体质选茶——肝阳亢/易上火者清润、干瘦皮肤干燥者润燥、手心潮热情绪波动者柔肝。羊肉、萝卜、山药花样吃。⚠️ 转发时附"体质调理建议咨询中医师，不自行对号入座"。</p>
+<p><strong>川芎酒</strong><span class="risk risk-B">风险B · 谨慎转发</span>：川芎温通血脉，冬季适量饮用于防寒活血。⚠️ 含酒精——孕妇、肝病、服药（尤其抗凝/降压药）者忌；企业场景建议仅作知识介绍，不组织共饮。</p>
+<p><strong>黄精地黄膏（芸和中医特制）</strong>：秘方、芸和特制，冬令滋阴填精。属芸和中医提供的资源，作"涉及学习资源点出芸和中医"的入口，引导有需者通过芸和正规渠道了解，不替代治疗。</p>
+<ul class="bullets"><li>过年吃不胖 · 减脂食材与消食茶饮 · <span class="risk risk-A">风险A · 安全可发</span></li></ul>
+<p><strong>减脂应季食材：</strong>白萝卜（化痰湿、解肉腻）、冬瓜（利水消肿、连皮煮汤）、山药（护胃黏膜、缓解脾胃虚寒）、莲藕（促脂肪代谢、补而不滞）；温补不增重可选羊肉（配生姜当归温补脾肾、不增脂）、桂圆红枣（补气血循环）、炖汤加3–5粒花椒或1根肉桂化油腻。</p>
+<p><strong>消食化积茶饮：</strong>荷叶决明子茶（干荷叶3g+决明子5g闷泡，脾胃虚寒加两片生姜）、生姜红枣茶（三片姜+五枣，温中散寒）、茯苓薏米饮（茯苓15g+炒薏米20g，晨起空腹利水渗湿）、山楂陈皮茶（炒山楂10g+陈皮5g，餐后腹胀饮，每日≤500ml）。</p>
+<ul class="bullets"><li>黑色补肾</li></ul>
+<p><strong>黑芝麻糊：</strong>黑芝麻+核桃+黑豆打粉冲糊，补肾乌发、润肠，冬日干燥便秘友好 低</p>
+<p>💡 转发一句话：冬天怕冷没精神？一碗当归生姜羊肉汤、或一杯姜枣茶温温喝下，比冰饮养人多了～</p>
+<h4>🧧 春节团圆 · 过年吃不胖的智慧</h4>
+<div class="callout"><div class="callout-h">过年聚餐多、运动少，易"摄入多消耗少"。以下以"会吃、会喝、会动"为主，重在平衡不挨饿。</div></div>
+<p><strong>① 宴席怎么点（<span class="risk risk-A">风险A · 安全可发</span>）</strong></p>
+<ul class="bullets"><li>荤素搭配：凉菜含1–2道清爽素食（凉拌木耳、蒜蓉菠菜），配少量卤味；深色蔬菜优先（叶绿素助代谢节日高脂）。</li><li>烹饪优选清蒸、白灼（清蒸鲈鱼、白灼虾），红烧油炸不超总量30%；点一道菌菇炖菜（茶树菇鸡汤）助肠道蠕动。</li><li>调味加酸："酸能化甘腻"，1–2道酸味菜（醋溜白菜、柠檬凤爪）促脂肪分解。</li></ul>
+<p><strong>② 饮酒不伤身（<span class="risk risk-B">风险B · 谨慎转发</span>）</strong></p>
+<ul class="bullets"><li>开席先吃半碗杂粮主食或优质蛋白"谷气护胃"再饮酒；席间温陈皮普洱茶护胃黏膜。</li><li>解酒：餐后鲜榨梨汁300ml+蜂蜜10g+淡竹叶5g；高血压用菊花决明子茶代酒，糖尿病用桑叶玉米须茶代酒。⚠️ 忌碳酸饮料解酒（加剧胃酸）。</li></ul>
+<p><strong>③ 饭后助消化 & 走亲访友动起来（<span class="risk risk-A">风险A · 安全可发</span>）</strong></p>
+<ul class="bullets"><li>饭后1小时：敲带脉（腰两侧空拳轻敲100下）、脚趾抓地（赤脚抓毛巾/弹珠刺激太白穴）、金刚跪坐15–20分钟。</li><li>走亲访友：爬楼替代电梯（每10分钟≈100千卡）、"快走+间歇慢走"激活足三阴/三阳经、候客时"背后合十/靠墙天使"、抱拳礼配合深蹲。</li></ul>
+<p><strong>④ 误区与食欲穴位（<span class="risk risk-B">风险B · 谨慎转发</span>）</strong></p>
+<ul class="bullets"><li>误区：白汤火锅底实则含大量油脂、增加心脑负担；盲目进补人参阿胶易生痰湿；睡前加餐加重脾胃与脂肪堆积。</li><li>餐前按揉<strong>中脘、足三里</strong>助运化，或按<strong>耳穴饥点</strong>（耳屏中央凹陷处）1分钟减食欲——⚠️ 穴位操作建议咨询专业人士，不盲目自用。</li></ul>
+<h4>💭 冬季情志调摄</h4>
+<p><strong>冬藏少耗：</strong>冬季昼短夜长，人易缩着不动、情绪低落（中医谓"冬气通于肾，恐伤肾"）；减少无谓消耗，养精蓄锐</p>
+<p><strong>晒太阳补阳：</strong>中午11–13点晒后背20分钟，补阳气、温督脉、解郁，最便宜的"阳气药"</p>
+<p><strong>情志活动建议：</strong>站桩、八段锦、散步、书法、听音乐等舒缓运动；避免大喜大怒、情绪大起大落</p>
+<p><strong>严重情况：</strong>若持续情绪低落、失眠焦虑影响工作生活，请及时寻求专业心理支持或就医</p>
+<p>💡 转发一句话：冬天容易犯懒、心情低落？去晒15分钟太阳、散个步——阳气升起来，心情自然亮 ☀️</p>
+</details></section>
+<section id="sec-11" class="sec"><details class="fold"><summary><h2>五、外治与冬日手作</h2></summary>
+<p>艾叶花椒沐足法★</p>
+<p>深冬温阳驱寒，引火归元、改善睡眠手足冰凉 低</p>
+<p></p>
+<ul class="bullets"><li>容器高过25厘米，艾叶15g+生姜3片+花椒10粒煮水</li></ul>
+<ul class="bullets"><li>熏蒸10分钟（毛巾搭盆上）→ 加冷水至水面达脚面8公分</li></ul>
+<ul class="bullets"><li>泡20–40分钟，以全身微微温暖为宜</li></ul>
+<ul class="bullets"><li>大医派沐足方同理：薰→泡→擦干，不续热水自然降温</li></ul>
+<p>三九贴 / 艾灸盒★★</p>
+<p>冬病冬治，温阳御寒，三九天最宜 中风险·需医师辨证</p>
+<p></p>
+<ul class="bullets"><li>选穴：大椎（免疫）、命门（温肾）、关元（培元）、足三里（脾胃）</li></ul>
+<ul class="bullets"><li>艾灸盒温灸，每穴15–20分钟，温和为宜、不宜久</li></ul>
+<ul class="bullets"><li>亦可贴三九贴（医院/中医馆配制），按疗程贴敷</li></ul>
+<ul class="bullets"><li>关节痹痛、老寒腿亦可做艾绒腰封/护膝外戴</li></ul>
+<p>冬日手作·姜枣膏★★</p>
+<p>家庭手作文化体验，温中散寒、补血养颜 低</p>
+<p></p>
+<ul class="bullets"><li><strong>原料</strong>：老生姜500g（榨汁）、红枣250g（去核打泥）、红糖250g、可选桂圆肉50g</li></ul>
+<ul class="bullets"><li><strong>器具</strong>：不粘锅/砂锅、玻璃密封罐（禁用金属长期存）、搅拌勺</li></ul>
+<ul class="bullets"><li><strong>步骤</strong>：姜榨汁滤渣→红枣煮软打泥→姜汁+枣泥+红糖小火慢熬，不停搅拌至浓稠挂勺（约40–60分钟）→趁热装罐密封</li></ul>
+<ul class="bullets"><li><strong>时间</strong>：冷却后冷藏，可存1–2个月；每日一勺冲温水饮</li></ul>
+<ul class="bullets"><li><strong>意涵</strong>：姜辛温散寒、枣甘温补血，冬令温中佳品，呼应"立冬姜枣茶回归"</li></ul>
+<p><strong>⚠️ 安全提示</strong>：含糖量高，糖尿病人慎用；孕妇及热性体质适量；不替代任何治疗。</p>
+<p>腊八蒜 / 腊八粥（轻手作）★</p>
+<p>腊八节食养，蒜辛温通阳、杂粮温补 低</p>
+<p></p>
+<ul class="bullets"><li><strong>腊八蒜做法</strong>：</li></ul>
+<h4 class="tip">① 紫皮蒜剥瓣、洗净晾干（不可带水生水）</h4>
+<h4 class="tip">② 入干净玻璃罐，倒米醋没过蒜（禁用金属罐）</h4>
+<h4 class="tip">③ 密封避光，约20天变绿即可食用</h4>
+<h4 class="tip">④ 辛温通阳、解腻消食，配饺子热粥一流</h4>
+<ul class="bullets"><li><strong>腊八粥做法</strong>：</li></ul>
+<h4 class="tip">① 杂粮（糯米、红豆、薏米、莲子、红枣、桂圆、花生）浸泡</h4>
+<h4 class="tip">② 慢火熬煮成稠粥，温补养身</h4>
+<h4 class="tip">③ 腊八节前后煮一锅，同事家人分享</h4>
+<ul class="bullets"><li>均须标注：自制发酵/腌制食品注意卫生，适量、不替代治疗</li></ul>
+<div class="route"><strong>━━ 线路四：黑芝麻丸 / 八珍糕（冬令食养手作）</strong></div>
+<p>黑芝麻丸 / 八珍糕（古法食养）★</p>
+<p>补肝益肾、健脾养胃，动手做、分装带回家 低</p>
+<p></p>
+<ul class="bullets"><li><strong>黑芝麻丸做法</strong>：</li></ul>
+<h4 class="tip">① 食材：黑芝麻1000–1500克、蜂蜜适量（炼蜜为丸）</h4>
+<h4 class="tip">② 黑芝麻洗净，蒸熟后晒干，反复蒸晒2–3次（古方中要求九蒸九晒）</h4>
+<h4 class="tip">③ 研细末，炼蜜为丸</h4>
+<h4 class="tip">④ 食法：每服3克，日服3次，温开水或温米酒送下</h4>
+<ul class="bullets"><li><strong>功效</strong>：补肝益肾、健脑强身、填精髓、延年益寿</li></ul>
+<ul class="bullets"><li><strong>适合人群</strong>：白发增多、记忆力减退、腰酸、易疲惫、手脚心热、骨关节酸痛、心悸、晚上睡觉出汗者</li></ul>
+<ul class="bullets"><li><strong>八珍糕做法</strong>：</li></ul>
+<h4 class="tip">① 食材：党参、茯苓、生白术、扁豆、莲子肉、生薏米、生山药、芡实各60克；白米面3千克、白糖2.4千克、江米面3千克</h4>
+<h4 class="tip">② 共研为细粉、过罗，搅匀蒸糕，每块重30克</h4>
+<h4 class="tip">③ 食法：每服15克，日服2次，温开水送下</h4>
+<ul class="bullets"><li><strong>功效</strong>：健脾养胃、延年益寿；适合脾胃不好、吃东西不香、没有胃口、平时爱出汗者</li></ul>
+<ul class="bullets"><li>均须标注：古法食养含药材与糖分，孕妇、服药者、小儿及糖尿病人先咨询中医师，适量、不替代治疗</li></ul>
+</details></section>
+<section id="sec-12" class="sec"><details class="fold"><summary><h2>六、亲子专题（小儿冬养）</h2></summary>
+<p>以下为家庭护理参考，症状持续或加重请及时就医。中风险·视情况就医</p>
+<p>小儿风寒感冒初期★</p>
+<p>冬天小儿最常见，方向错了反伤身</p>
+<p></p>
+<p><strong>第一步：辨寒热（看症状）</strong></p>
+<ul class="bullets"><li><strong>风寒</strong>：受凉引起、清鼻涕、白稀痰、怕冷、精神尚可——用<strong>葱白姜枣水 / 艾叶泡脚</strong></li></ul>
+<ul class="bullets"><li><strong>风热</strong>：黄黏涕、黄痰、咽喉红肿、喜凉——用<strong>金银花水 / 清热类</strong>（需医师指导）</li></ul>
+<p>⚠️ 切勿风寒也喝凉药、风热也捂汗——方向相反，越治越重！</p>
+<p><strong>第二步：风寒对策·葱白姜枣水（有具体做法）</strong></p>
+<ul class="bullets"><li>材料：大葱白3段、生姜3片、红枣3枚（去核）</li></ul>
+<ul class="bullets"><li>做法：加水煮10分钟，温服，微微出汗即可</li></ul>
+<ul class="bullets"><li>配合艾叶泡脚（水温适宜，泡10–15分钟），散寒解表</li></ul>
+<p>⚠️ 仅限风寒初期、无高热；高热/精神差/气促速就医</p>
+<p><strong>第三步：其他家庭护理法（一句话）</strong></p>
+<ul class="bullets"><li>风寒还可选：艾绒肚兜护腹、搓手心脚心保暖</li></ul>
+<ul class="bullets"><li>预防：三处保暖（头颈腰脚）、不摸黑晨练、多喝温热水</li></ul>
+<p>小儿手脚冰凉 / 冻疮防护★</p>
+<p>冬季保暖与局部护理</p>
+<p></p>
+<ul class="bullets"><li>保暖：帽子围巾手套齐全，鞋袜干爽保暖，避免长时间户外</li></ul>
+<ul class="bullets"><li>冻疮初期：温水（非烫）泡手泡脚促进循环，擦干后涂防冻膏/润肤；忌火烤烫洗</li></ul>
+<ul class="bullets"><li>日常：搓手搓脚、适度活动四肢，改善末梢循环</li></ul>
+<ul class="bullets"><li>小儿阳气弱，护理无效或起水疱/破溃速就医</li></ul>
+</details></section>
+<section id="sec-13" class="sec"><details class="fold"><summary><h2>七、避坑与辨证（转发必看）</h2></summary>
+<p><strong>🚫 常见误区</strong></p>
+<ul class="bullets"><li>冬天盲目大补猛吃——虚不受补者先伤脾胃，应温补有度、循序渐进</li></ul>
+<ul class="bullets"><li>汗蒸桑拿大汗淋漓——冬主藏，大汗伤阳耗气，微汗即止</li></ul>
+<ul class="bullets"><li>紧闭门窗不通风——浊气积聚易感冒，每日通风一次</li></ul>
+<ul class="bullets"><li>摸黑天未亮就晨练——寒气重、血压波动大，必待日光再出门</li></ul>
+<ul class="bullets"><li>过食咸味——"咸伤肾"，冬宜少咸，适当苦味养心</li></ul>
+<ul class="bullets"><li>电热毯整夜开——燥热伤阴、口干心烦，改用暖水袋/睡前泡脚更养</li></ul>
+<ul class="bullets"><li>感冒就捂厚汗——风寒初期微汗即可，捂大汗反伤正</li></ul>
+<p><strong>💡 冬季核心原则</strong></p>
+<ul class="bullets"><li>养藏为本、起居有常、情志调达——顺应冬"藏"，不扰动阳气</li></ul>
+<ul class="bullets"><li>三微：微劳、微汗、微暖；饮食三看：看地、看天、看人=当季当地</li></ul>
+<ul class="bullets"><li>恐伤肾、喜伤心，冬藏少耗、多晒背补阳</li></ul>
+</details></section>
+<section id="sec-14" class="sec"><details class="fold"><summary><h2>八、活动执行手册（健康管理员直接用）</h2></summary>
+<p class="note">🌟 难度：★ 极简 | ★★ 中等 | ★★★ 可组织协调 · 每项均含「准备→执行→物料」全流程</p>
+<p>活动一：暖身茶饮角★</p>
+<p>茶水间/休息区常备，零门槛启动</p>
+<p></p>
+<p><strong>📋 目标</strong>：让每位员工每天至少喝到一杯温补饮品，养成冬养习惯</p>
+<p><strong>🧰 物料清单</strong>：</p>
+<ul class="bullets"><li>电热水壶/养生壶 ×1–2</li></ul>
+<ul class="bullets"><li>生姜、红枣、桂圆、陈皮（一周量）</li></ul>
+<ul class="bullets"><li>红糖（可选）</li></ul>
+<ul class="bullets"><li>小卡片/立牌（写当日饮品名+功效一句话）</li></ul>
+<ul class="bullets"><li>一次性纸杯或鼓励自带杯</li></ul>
+<p><strong>⏰ 执行节奏（每周轮换）</strong>：</p>
+<p><strong>周一三五</strong>：姜枣茶（生姜3片+红枣5枚煮水，立冬后回归）</p>
+<p><strong>周二四</strong>：桂圆红枣茶（桂圆8粒+红枣5片）</p>
+<p><strong>周五</strong>：陈皮姜枣茶（换口味，理气暖胃）</p>
+<p><strong>💡 运营小技巧</strong>：</p>
+<ul class="bullets"><li>配一张"今日暖身饮"小卡片，写上功效（如"姜枣茶·温中散寒"）</li></ul>
+<ul class="bullets"><li>在群里发一张照片+"来杯冬天的温暖☕"，引导自发打卡</li></ul>
+<ul class="bullets"><li>月末统计"最受欢迎的暖身饮"，投票选出下月保留款</li></ul>
+<p>活动二：护肾暖身操★</p>
+<p>每天5分钟，全员可参与</p>
+<p></p>
+<p><strong>📋 目标</strong>：利用工间5分钟做暖身护肾动作，缓解久坐腰冷、提升阳气</p>
+<p><strong>🧰 物料清单</strong>：</p>
+<ul class="bullets"><li>动作图解卡片（搓腰+八段锦固肾腰+拍八虚）×1份/人 或 电子版发群</li></ul>
+<ul class="bullets"><li>定时提醒（企业微信/钉钉定时消息 或 手动提醒）</li></ul>
+<ul class="bullets"><li>可选：背景轻音乐（古琴/自然白噪音）</li></ul>
+<p><strong>⏰ 执行流程（每日上午10:30 / 下午15:30，二选一或两次）</strong>：</p>
+<p><strong>第1分钟</strong>：全员起立，调匀呼吸、搓手 warming</p>
+<p><strong>第2–3分钟</strong>：搓腰固肾——双手搓热捂肾俞上下搓100下（配口令"搓热—捂住—发热"）</p>
+<p><strong>第4–5分钟</strong>：八段锦"两手攀足固肾腰"×6次 + 拍八虚（肘窝/腋/髀/腘）各30秒</p>
+<p><strong>💡 运营小技巧</strong>：</p>
+<ul class="bullets"><li>第一周管理员带头做 + 用手机录一个示范短视频发群</li></ul>
+<ul class="bullets"><li>设"暖身打卡榜"，连续跟练5天以上者获小奖励（如暖贴一包）</li></ul>
+<ul class="bullets"><li>动作图解卡附在指南末尾或单独打印张贴于茶水间</li></ul>
+<p>活动三：全冬季打卡挑战★★</p>
+<p>11.7–1.20 共75天，社群运营核心抓手</p>
+<p></p>
+<p><strong>📋 目标</strong>：通过75天持续打卡，将冬养习惯植入日常</p>
+<p><strong>🧰 物料清单</strong>：</p>
+<ul class="bullets"><li>打卡群（企业微信/钉钉群 或 微信群）</li></ul>
+<ul class="bullets"><li>打卡模板（每日固定格式）</li></ul>
+<ul class="bullets"><li>奖品池：暖贴/保温杯/暖手宝/养生茶包/艾草足浴包（预算50–200元）</li></ul>
+<ul class="bullets"><li>打卡记录表（在线文档即可）</li></ul>
+<p><strong>📝 打卡模板（每日复制填空）</strong>：</p>
+<p>❄️ 冬季养生打卡 Day__ / 75</p>
+<p>今日日期：____月____日</p>
+<p>✅ 今日完成的小事（选1–3件勾选或自写）：</p>
+<ul class="bullets"><li>早睡、太阳出来后再锻炼（不摸黑晨练）</li><li>喝了暖身饮（姜枣茶/桂圆红枣茶/其他___） ← 例：姜枣茶1杯</li><li>泡脚20分钟以上（加艾叶/生姜___）</li><li>做了暖身操（搓腰/八段锦固肾腰/拍八虚） ← 例：搓腰100下</li><li>护好三处（戴帽围巾/护腰/厚袜） ← 例：戴了围巾+护腰</li><li>少吃生冷寒凉</li><li>其他：___ ← 例：中午晒背20分钟</li></ul>
+<p>今日感受（一句）：___ ← 例：今天泡完脚浑身暖，睡得特别香～</p>
+<p><strong>📊 节奏设计</strong>：</p>
+<p><strong>第1周（立冬适应期）</strong>：只要求1件事/天，以"喝姜枣茶+早卧晚起"为主</p>
+<p><strong>第2–4周（习惯建立期）</strong>：升级到2件事/天，加入泡脚/搓腰</p>
+<p><strong>第5–8周（深化期）</strong>：2–3件事/天，加入暖身操/三处防护/晒背</p>
+<p><strong>第9–11周（收官期·小寒大寒）</strong>：自由组合，鼓励分享变化与收获</p>
+<p><strong>🎁 激励机制</strong>：</p>
+<ul class="bullets"><li>满30天：电子证书 + 暖贴1包</li></ul>
+<ul class="bullets"><li>满50天：保温杯/暖手宝（二选一）</li></ul>
+<ul class="bullets"><li>满65天：养生茶礼包 + "冬养达人"称号</li></ul>
+<ul class="bullets"><li>全勤75天：特别奖品（如芸和养生营体验名额/艾灸体验券）</li></ul>
+<p>活动四：冬至手作节★★★</p>
+<p>深冬仪式活动，线上线下均可</p>
+<p></p>
+<p><strong>📋 目标</strong>：在冬至节气组织一次手作活动，作为冬季养生的仪式感收尾与温补起点</p>
+<div class="route"><strong>━━ 线路一：姜枣膏（需加热，适合有厨房/茶水间的场景）</strong></div>
+<p><strong>🧰 物料清单</strong>：</p>
+<ul class="bullets"><li>老生姜、红枣、红糖（按人数称量）</li></ul>
+<ul class="bullets"><li>不粘锅/砂锅、搅拌勺、玻璃密封罐</li></ul>
+<ul class="bullets"><li>电子秤/量勺、标签贴纸、一次性手套</li></ul>
+<p><strong>⏰ 操作流程（建议时长60分钟）</strong>：</p>
+<p><strong>前10分钟</strong>：讲解姜枣膏原理——"立冬姜枣茶回归，做成膏随时冲"；展示成品样品</p>
+<p><strong>中间30分钟</strong>：大家轮流操作——姜榨汁滤渣→红枣煮软打泥→姜汁枣泥红糖小火熬至浓稠挂勺→趁热装罐→贴标签写名字日期</p>
+<p><strong>后20分钟</strong>：冷却封盖 + 合影 + 讲解用法（每日一勺冲温水）+ 带回家</p>
+<p>💡 注意：熬膏需小火不停搅拌防糊；无姜榨汁可用姜末替代但口感略粗</p>
+<div class="route"><strong>━━ 线路二：艾绒腰封（无需加热，最适合办公室场景）</strong></div>
+<p><strong>🧰 物料清单</strong>：</p>
+<ul class="bullets"><li>艾绒（成品即可，每人约100g）、棉布（纯棉最佳）</li></ul>
+<ul class="bullets"><li>绑带（魔术贴或系带）、针线或布胶带（免缝）、剪刀</li></ul>
+<ul class="bullets"><li>可选：装饰贴布</li></ul>
+<p><strong>⏰ 操作流程（建议时长45分钟）</strong>：</p>
+<p><strong>前10分钟</strong>：讲解"为什么冬天要护腰"——腰为肾之府、寒气从腰入；展示成品</p>
+<p><strong>中间20分钟</strong>：裁剪棉布成腰封尺寸→填充艾绒（厚约1cm）→缝合或布胶带封口→安装绑带</p>
+<p><strong>后15分钟</strong>：试戴调整松紧 + 合影 + 讲解用法（久坐/睡前佩戴）+ 带回家</p>
+<p>💡 此线无需加热，零基础也能做；可提前裁好布料省时间</p>
+<div class="route"><strong>━━ 线路三：腊八蒜（最简单，提前泡制）</strong></div>
+<p><strong>🧰 物料清单</strong>：</p>
+<ul class="bullets"><li>紫皮蒜、米醋、玻璃罐（每人1个，200–300ml）</li></ul>
+<ul class="bullets"><li>需提前约20天泡制（腊八节前启动），活动当天观察变色、分享吃法</li></ul>
+<p><strong>⏰ 执行流程（建议总时长45分钟含讲解分享）</strong>：</p>
+<p><strong>前10分钟</strong>：讲解"为什么冬天泡腊八蒜"（辛温通阳、解腻消食、腊八食养）</p>
+<p><strong>中间10分钟</strong>：现场示范装罐（蒜入罐→倒米醋没过→密封写标签）</p>
+<p><strong>后15分钟</strong>：分享交流 + 合影 + 约定20天后开吃</p>
+<p><strong>最后10分钟</strong>：自由选择再做一瓶 / 尝试其他线路 / 提问答疑</p>
+<p><strong>💡 运营建议</strong>：三条线路同时开放，让大家按兴趣自选；管理员每条线各带1人示范；线上版可录5分钟视频教程发群。</p>
+<p>活动五：冬日养生知识问答★★</p>
+<p>寓教于乐，检验学习成果</p>
+<p></p>
+<p><strong>📋 目标</strong>：通过轻松的问答形式巩固冬养知识，活跃社群氛围</p>
+<p><strong>🧰 物料清单</strong>：</p>
+<ul class="bullets"><li>题库（从本指南出题，见下方示例）</li></ul>
+<ul class="bullets"><li>答题工具（问卷星/腾讯文档/群内接龙均可）</li></ul>
+<ul class="bullets"><li>小奖品（养生茶包、艾草足浴包、暖贴、书签等）</li></ul>
+<p><strong>📝 题库示例（每期5题，每周五发布）</strong>：</p>
+<p><strong>第一期·藏阳篇</strong></p>
+<p>Q1：冬天为什么要"藏"？答案方向：阳气内藏、养肾</p>
+<p>Q2："早卧晚起"后面接哪四个字？答案：必待日光</p>
+<p>Q3：秋季处暑后停的姜枣茶，冬天什么时候恢复？答案：立冬后</p>
+<p>Q4：冬天泡脚多久合适？答案：20–40分钟泡到全身暖</p>
+<p>Q5：以下哪种食物适合冬天多吃？A.冰激凌 B.羊肉 C.西瓜 → B</p>
+<p><strong>第二期·温补篇</strong></p>
+<p>Q1：冬季第一暖汤是什么？答案：当归生姜羊肉汤</p>
+<p>Q2："冬吃萝卜夏吃姜"里冬天吃萝卜有什么好处？答案：顺气化痰</p>
+<p>Q3：黑色食物为什么补肾？答案：五色黑入肾</p>
+<p>Q4：虚不受补的人应该先做什么？答案：先调脾胃</p>
+<p>Q5：以下哪类人最该温补保暖？A.阳虚畏冷 B.实热长痘 C.夏天怕热 → A</p>
+<p><strong>⏰ 执行节奏</strong>：共11期（覆盖11周），每周五中午发布，周末截止，周一公布答案+获奖者</p>
+<p><strong>🎁 奖励</strong>：每期最快全对的前3名得小奖品；11期累计答对最多者获"冬养知识王"大奖</p>
+</details></section>
+<section id="sec-15" class="sec"><details class="fold"><summary><h2>九、75天每日温馨提示</h2></summary>
+<p>以下为完整75天（11月7日–1月20日）每日话术，可直接复制发送到社群。</p>
+<h3 class="phase">第一阶段·立冬闭藏期（11月7日–11月21日，15天）</h3>
+<div class="day">Day 1 · 11月7日 立冬 ❄️</div>
+<p>家人们，今天立冬！秋"收"转冬"藏"，藏阳养肾、温补防寒从此开始 🌿 第一件事：姜枣茶可以重新喝起来啦（秋天处暑后停了，冬天回来了）🔥 还有——早卧晚起，等太阳出来再出门锻炼。</p>
+<div class="day">Day 2 · 11月8日</div>
+<p>立冬第二天。今天有没有觉得风更硬了？ 记住——冬主闭藏，别再像夏天那样大汗淋漓，运动微汗就好，汗后千万别吹凉风 🚪</p>
+<div class="day">Day 3 · 11月9日</div>
+<p>今天想跟大家聊聊"藏"。 冬藏不是不动，是把能量往里收——早睡一点、少耗散、情绪稳一点。 从小事做起：今晚提前10分钟上床 🌙</p>
+<div class="day">Day 4 · 11月10日</div>
+<p>温补第一天！冬天适合黑色食物补肾：黑芝麻、黑豆、桑葚。 一把黑芝麻糊，比咖啡暖身 🫘</p>
+<div class="day">Day 5 · 11月11日</div>
+<p>泡脚提醒：冬天泡脚可以比秋天久一点，20–40分钟，泡到全身暖。 虚寒体加艾叶或生姜片 🦶</p>
+<div class="day">Day 6 · 11月12日</div>
+<p>饮食小贴士：姜枣茶回归！晨起含一片薄姜（虚寒体），白天煮姜枣茶暖身。 秋天停的，冬天捡回来 🔥</p>
+<div class="day">Day 7 · 11月13日</div>
+<p>今日动作：搓腰固肾。双手搓热捂腰眼（肾俞）上下搓100下至发热，温命门、暖全身。 早晚各一次 💪</p>
+<div class="day">Day 8 · 11月14日</div>
+<p>情志小提醒：冬天容易缩在屋里不想动、情绪低落。 今天去晒15分钟太阳 ☀️ 补阳又解郁，最便宜的"阳气药"。</p>
+<div class="day">Day 9 · 11月15日</div>
+<p>推荐汤方：当归生姜羊肉汤 🍲 羊肉温补、当归活血、生姜散寒，冬天第一碗暖身汤。虚寒手脚凉的特别适合。</p>
+<div class="day">Day 10 · 11月16日</div>
+<p>立冬第二周！给自己定个小目标：这个月把"22:30前睡、太阳出来再锻炼"做到至少20天。 早卧晚起是冬天最养人的作息 😴</p>
+<div class="day">Day 11 · 11月17日</div>
+<p>护肾小功：八段锦"两手攀足固肾腰"——直立弯腰双手攀足配合呼吸，每天5分钟，腰暖肾充 🫘</p>
+<div class="day">Day 12 · 11月18日</div>
+<p>防寒重点：头颈、腰腹、脚。 今天检查装备：帽子、围巾、护腰、厚袜。三处护住，寒气进不来 🧣</p>
+<div class="day">Day 13 · 11月19日</div>
+<p>茶饮推荐：桂圆红枣茶 🌹 桂圆+红枣煮水，补血养心安神，冬天手脚凉、睡不好的来一杯。</p>
+<div class="day">Day 14 · 11月20日</div>
+<p>站桩/八段锦提醒：冬天室内也能练。 站桩15分钟，松静自然，比跑步更适合闭藏季节 🧘</p>
+<div class="day">Day 15 · 11月21日</div>
+<p>立冬闭藏期收官倒计时！回顾这半个月： ✅ 姜枣茶喝了吗？✅ 早卧晚起做到了？✅ 泡过脚了？ 明天就是小雪，冬天的第二扇门要打开了——准备好了吗 ❄️</p>
+<h3 class="phase">第二阶段·小雪至大雪（11月22日–12月6日，15天）</h3>
+<div class="day">Day 16 · 11月22日 小雪 ❄️</div>
+<p>今日小雪！寒未深雪未大，但冷意明显。 收藏好秋冬衣物，护住三处。喝点热汤暖身 🍲</p>
+<div class="day">Day 17 · 11月23日</div>
+<p>小雪后空气干冷。室内开暖气记得加湿，不然嗓子干、皮肤痒。 一杯温蜂蜜水润一润 💧</p>
+<div class="day">Day 18 · 11月24日</div>
+<p>温补进阶：黄芪山药粥 🥣 黄芪+山药+小米，气虚乏力、易感冒的冬天常喝。健脾补肺固表。</p>
+<div class="day">Day 19 · 11月25日</div>
+<p>今日动作：拍八虚（肘窝、腋、髀、腘）★ 空心掌拍打，疏通气血、祛寒湿。 冬天久坐更该拍 👋</p>
+<div class="day">Day 20 · 11月26日</div>
+<p>饮食提醒：冬天也别猛吃猛补。 虚不受补的先调脾胃——山药莲子粥、小米粥打底，再慢慢加温补。</p>
+<div class="day">Day 21 · 11月27日</div>
+<p>晒太阳②：后背晒太阳能补阳气、温督脉。 中午11–13点晒20分钟后背，比吃补药实在 ☀️</p>
+<div class="day">Day 22 · 11月28日</div>
+<p>周末亲子：给孩子讲冬天要保暖、少吃冰的 📖 小儿阳气弱，手脚冰凉多搓搓，睡前艾叶泡脚。</p>
+<div class="day">Day 23 · 11月29日</div>
+<p>茶饮：陈皮姜枣茶 🍵 姜枣茶加陈皮理气，冬天胃胀、怕冷、痰湿重的来一杯，暖胃又化痰。</p>
+<div class="day">Day 24 · 11月30日</div>
+<p>十一月最后一天！回顾半月：温补开始了吗？三处护住了？泡脚坚持了？ 明天进仲冬，寒气更重 💪</p>
+<div class="day">Day 25 · 12月1日</div>
+<p>十二月你好！寒冬进补月开启。 今天定目标：每周至少2次温补汤（羊肉/鸡汤/骨汤），把底子暖起来 🍲</p>
+<div class="day">Day 26 · 12月2日</div>
+<p>护腰日：久坐腰冷？除了搓腰，加个暖宝宝或艾绒腰封。 腰为肾之府，暖腰=暖肾 🫘</p>
+<div class="day">Day 27 · 12月3日</div>
+<p>情志：冬天夜长，容易想得多、低落。 今天做件暖心小事——给家人打个电话、煮碗汤、看部暖片 😊</p>
+<div class="day">Day 28 · 12月4日</div>
+<p>黑芝麻糊时间！黑芝麻+核桃+黑豆打粉冲糊，补肾乌发、润肠。 冬天干燥便秘的友好早餐 🫘</p>
+<div class="day">Day 29 · 12月5日</div>
+<p>冬至倒计时！数九将启，温补最佳窗口要来了。 检查：羊肉、当归、姜枣、艾条都备了吗？</p>
+<div class="day">Day 30 · 12月6日</div>
+<p>大雪前最后一天！回顾小雪以来：温补节奏对了？三处还护着？泡脚加料了？ 明天大雪，仲冬正式来 ❄️</p>
+<h3 class="phase">第三阶段·大雪至冬至（12月7日–12月20日，14天）</h3>
+<div class="day">Day 31 · 12月7日 大雪 ⛄</div>
+<p>今日大雪！雪盛仲冬，寒气最重时段开启。 温补加码：当归生姜羊肉汤、黄芪山药粥轮着来。三处重点护 🧥</p>
+<div class="day">Day 32 · 12月8日</div>
+<p>大雪后寒从脚下生。暖鞋厚袜安排上，睡前泡脚加花椒/艾叶，泡到全身暖再睡 🦶</p>
+<div class="day">Day 33 · 12月9日</div>
+<p>护肾操Day：搓腰100下 + 八段锦固肾腰 + 拍八虚。 不到10分钟，肾暖全身暖 🫘</p>
+<div class="day">Day 34 · 12月10日</div>
+<p>茶饮：当归补血茶 🌹 当归+黄芪+红枣，气血双补。冬天面色白、乏力、月经少的女性朋友适合。</p>
+<div class="day">Day 35 · 12月11日</div>
+<p>腊八蒜制作季！🧄 腊八节前泡上：紫皮蒜+米醋，封罐避光。约20天变绿，辛温通阳、解腻消食。</p>
+<div class="day">Day 36 · 12月12日</div>
+<p>周末亲子：带孩子煮一碗热粥 🥣 讲讲"冬吃萝卜"——萝卜顺气、白菜养身，当季最养人。</p>
+<div class="day">Day 37 · 12月13日</div>
+<p>艾叶花椒沐足日 🦶 深冬了，泡脚加艾叶+花椒，温经散寒、改善手足冰凉。泡20–40分钟微汗。</p>
+<div class="day">Day 38 · 12月14日</div>
+<p>防寒细节：室内暖气别直吹、温度别太高（约20℃），否则内外温差大更易感冒。 加湿+通风每日一次。</p>
+<div class="day">Day 39 · 12月15日</div>
+<p>冬至前一周！可以做姜枣膏了 🍯 生姜+红枣+红糖熬膏，温中散寒、补血养颜。一罐过冬，冲水即饮。</p>
+<div class="day">Day 40 · 12月16日</div>
+<p>艾灸提示：仲冬可适度艾灸温补。常用：命门（温肾）、关元（培元）、足三里（脾胃）、大椎（免疫）。 需辨证、温和为宜 🔥</p>
+<div class="day">Day 41 · 12月17日</div>
+<p>情志：冬至前后昼最短，容易犯懒、低落。 今天晒背+散步，动一动阳气就升起来了 ☀️🚶</p>
+<div class="day">Day 42 · 12月18日</div>
+<p>饮食：萝卜正当令 🥬 冬吃萝卜夏吃姜。白萝卜排骨汤、羊肉萝卜汤，温补不腻、顺气化痰。</p>
+<div class="day">Day 43 · 12月19日</div>
+<p>冬至倒计时2天！数九寒天将启，温补黄金期。 检查艾条、暖贴、厚被都到位了吗 🧣</p>
+<div class="day">Day 44 · 12月20日</div>
+<p>冬至前最后一天！回顾大雪以来：温补加码了？泡脚加料了？三处还暖着？ 明天冬至，一阳生——下半场加油 💪</p>
+<h3 class="phase">第四阶段·冬至一阳生（12月21日–1月4日，15天）</h3>
+<div class="day">Day 45 · 12月21日 冬至 🌞</div>
+<p>今日冬至！白昼最短、一阳生，数九开始，温补最佳起点 🎉 一起做姜枣膏、煮羊肉汤吧。从今天起"冬至进补"，整个三九都暖 🍲</p>
+<div class="day">Day 46 · 12月22日</div>
+<p>冬至后数九，最冷时段来了。 "一九二九不出手"——出门戴手套帽子，手脸别冻着 🧤</p>
+<div class="day">Day 47 · 12月23日</div>
+<p>三九艾灸Day：命门+关元+足三里，温补肾阳、培元固本。 需专业辨证，温和为宜 🔥</p>
+<div class="day">Day 48 · 12月24日</div>
+<p>平安夜 🎄 节日也别贪凉熬夜。一杯桂圆红枣茶暖着，早点睡，养藏为本 🌙</p>
+<div class="day">Day 49 · 12月25日</div>
+<p>圣诞快乐 🎁 聚餐多，记得温补有度、不暴饮暴食。饭后散步20分钟，助运化。</p>
+<div class="day">Day 50 · 12月26日</div>
+<p>第50天里程碑 🏅 能走到这里说明你已经把冬藏变成了生活方式。给自己一个小奖励吧——一次艾草泡脚、一碗好汤、或者早点下班晒背 🌿</p>
+<div class="day">Day 51 · 12月27日</div>
+<p>茶饮：陈皮姜枣茶 🍵 冬至后痰湿重的来一杯，理气暖胃化痰。</p>
+<div class="day">Day 52 · 12月28日</div>
+<p>腊八蒜进入变色期 🧄 紫皮蒜在米醋里慢慢变绿，约20天就好。辛温通阳、配饺子解腻一流。</p>
+<div class="day">Day 53 · 12月29日</div>
+<p>腊八节前！腊八蒜、腊八粥安排上 🥣 腊八粥杂粮温补，腊八蒜辛温，传统冬令食养。</p>
+<div class="day">Day 54 · 12月30日</div>
+<p>年末倒数！今年养生最大的改变是什么？早睡了？温补了？手脚暖了？ 写下来，这些进步值得被看见 ✨</p>
+<div class="day">Day 55 · 12月31日</div>
+<p>跨年夜 🎆 熬夜守岁也别忘了：姜枣茶暖身、泡脚助眠、不贪凉。明天新的一年，从藏养开始 🌱</p>
+<div class="day">Day 56 · 1月1日 元旦 🎊</div>
+<p>新年好！元旦也养生：多喝温热水、按时吃饭、不熬夜。一碗热粥开启新的一年 🌿</p>
+<div class="day">Day 57 · 1月2日</div>
+<p>元旦后调整作息回归正轨。最后几天别熬大夜了——否则节后综合征会特别明显。今晚试试22:00前躺下 🌙</p>
+<div class="day">Day 58 · 1月3日</div>
+<p>姜枣膏熬制季！🍯 生姜榨汁+红枣泥+红糖小火熬至浓稠，装罐。每天一勺冲水，温中散寒过寒冬。</p>
+<div class="day">Day 59 · 1月4日</div>
+<h3 class="phase">第四阶段收官！从立冬到今天，你已经坚持了54天冬藏习惯了 👏 回顾一下：哪些习惯已经融入日常？哪些还需要加强？ 明天小寒，最冷时段开启 ❄️</h3>
+<h3 class="phase">第五阶段·小寒至大寒（1月5日–1月20日，16天）</h3>
+<div class="day">Day 60 · 1月5日 小寒 ❄️</div>
+<p>今日小寒！冷气积久，进入一年最冷时段。三处重点护，温补不松懈。睡前泡脚加艾草 🦶</p>
+<div class="day">Day 61 · 1月6日</div>
+<p>小寒后最冷，羊肉汤、当归生姜羊肉汤轮着喝。 虚不受补的先山药小米粥打底 🍲</p>
+<div class="day">Day 62 · 1月7日</div>
+<p>防寒：电热毯别整夜开（伤阴燥热），改用暖水袋/睡前泡脚更养。 室内通风每日一次。</p>
+<div class="day">Day 63 · 1月8日</div>
+<p>护肾操：搓腰 + 八段锦固肾腰，每天坚持。 腰暖了，全身都暖 🫘</p>
+<div class="day">Day 64 · 1月9日</div>
+<p>茶饮：桂圆红枣茶 🌹 寒冬补血安神，睡不好、手脚凉的常喝。</p>
+<div class="day">Day 65 · 1月10日</div>
+<p>三九天艾灸：大椎+命门+关元，温阳御寒。 需辨证、温和 🔥</p>
+<div class="day">Day 66 · 1月11日</div>
+<p>腊八蒜可以吃啦 🧄 泡了约20天变绿，配热粥饺子，辛温通阳解腻。</p>
+<div class="day">Day 67 · 1月12日</div>
+<p>周末做冬季手作收尾活动：艾绒腰封（免加热）☀️ 布料+艾绒+绑带，办公室也能暖腰。</p>
+<div class="day">Day 68 · 1月13日</div>
+<p>情志：三九天冷，人易缩着不动、低落。 今天晒背15分钟+散步，阳气升、心情好 ☀️</p>
+<div class="day">Day 69 · 1月14日</div>
+<p>饮食：白菜萝卜正当令 🥬 大寒前后的白菜萝卜最甜最养。清炒、炖汤都好，温补不腻。</p>
+<div class="day">Day 70 · 1月15日</div>
+<p>第70天！临近收官。回顾：温补习惯有了？三处护住了？泡脚坚持了？ 给自己鼓个掌 👏</p>
+<div class="day">Day 71 · 1月16日</div>
+<p>大寒倒计时！最冷将过，春不远。进补"补而不峻"，慢慢收尾，别猛吃猛喝 🥣</p>
+<div class="day">Day 72 · 1月17日</div>
+<p>艾叶花椒沐足正当时 🦶 寒冬最后一泡：艾草+花椒+温水+30分钟+擦干上床。暖一冬。</p>
+<div class="day">Day 73 · 1月18日</div>
+<p>周末可以办冬季手作收尾活动：姜枣膏/腊八蒜/艾绒腰封三条线任选，深冬最后的仪式感 🎀</p>
+<div class="day">Day 74 · 1月19日</div>
+<p>倒数第二天！来做个冬养总结吧 📝 这75天里你最大的改变是什么？是早睡了？温补了？还是手脚暖了？ 写下来，这些进步值得被看见 ✨</p>
+<div class="day">Day 75 · 1月20日 大寒 ❄️</div>
+<p>今日大寒，二十四节气之末！寒至极、待春回。萝卜白菜正当令，艾叶沐足温阳。 这一轮全冬季养生到今天圆满——<strong>藏得住，才养得深</strong>。 感恩75天的陪伴与坚持，春节团圆后早春再约 🌱💛</p>
+<ul class="bullets"><li>--</li></ul>
+</details></section>
+
+<section id="sec-appendix" class="sec"><details class="fold"><summary><h2>风险等级说明</h2></summary>
+  <div class="risk-defs">
+    <div class="risk-def risk-A"><span class="risk risk-A">风险A · 安全可发</span><p>知识原理、一般起居 / 食疗 / 功法，可放心转发给员工。</p></div>
+    <div class="risk-def risk-B"><span class="risk risk-B">风险B · 谨慎转发</span><p>具体艾灸配穴与操作、含酒精方、按体质调理等；转发请附“个人体质不同，操作前请咨询中医师 / 专业人士”。</p></div>
+    <div class="risk-def risk-C"><span class="risk risk-C">风险C · 明显医疗行为·不放</span><p>如心梗急救的针刺放血、舌下含服急救药、掐人中、处方汤剂等——本指南不收录，避免误导；急症请立即拨打 120 / 就近就医。</p></div>
+  </div>
+  <p class="note">本指南内容融合多方中医养生知识与沙龙资料，按上述风险分级标注，方便健康管理员按需转发。涉及具体养生操作的内容均已标明等级，转发风险B类内容时请务必附专业人员咨询提示。</p>
+</details></section>
+
+<footer>芸和中医 · 健康管理员社群 · 冬季养生落地指南</footer>
+</div>
+<div class="float-tip" id="floatTip"><span>⚠️ 转发风险B/C类内容前，请统一附一句：「个人体质不同，操作前请咨询中医师」</span><button onclick="document.getElementById('floatTip').style.display='none'">知道了</button></div>
+<script>
+document.querySelectorAll('.topnav a').forEach(function(a){
+  a.addEventListener('click',function(){
+    var t=document.querySelector(this.getAttribute('href'));
+    if(t){var d=t.querySelector('details.fold');if(d){d.open=true;}}
+  });
+});
+</script>
+</body>
+</html>
