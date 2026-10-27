@@ -56,8 +56,10 @@ footer{text-align:center;color:var(--mut);font-size:12px;margin-top:40px}
 details.fold summary{list-style:none;cursor:pointer}
 details.fold summary::-webkit-details-marker{display:none}
 details.fold summary h2{display:inline;margin:0}
-details.fold summary:after{content:"展开 ▾";float:right;color:var(--mut);font-size:13px;font-weight:400;padding-top:6px}
-details.fold[open] summary:after{content:"收起 ▴"}
+details.fold > summary:after{content:"展开 ▾";float:right;color:var(--mut);font-size:13px;font-weight:400;padding-top:6px}
+details.fold[open] > summary:after{content:"收起 ▴"}
+details.sub > summary:after{content:"展开 ▾";float:right;color:var(--mut);font-size:13px;font-weight:400;padding-top:8px}
+details.sub[open] > summary:after{content:"收起 ▴"}
 details.sub{margin:10px 0;border:1px solid #d8e8df;border-radius:12px;overflow:hidden}
 details.sub summary{list-style:none;cursor:pointer;background:#eef5f0;padding:10px 14px;font-weight:700;color:var(--green-d);font-size:16px}
 details.sub summary::-webkit-details-marker{display:none}
@@ -74,7 +76,7 @@ details.sub .body{padding:6px 14px 14px}
 </head>
 <body>
 <nav class="topnav">
-<a href="#sec-1">节气时间轴</a><a href="#sec-2">三九时间线</a><a href="#sec-3">总纲</a><a href="#sec-4">辨证避坑</a><a href="#sec-5">四大观念</a><a href="#sec-6">护心专题</a><a href="#sec-7">外治专区</a><a href="#sec-8">手作专区</a><a href="#sec-9">亲子专题</a><a href="#sec-10">活动手册</a><a href="#sec-11">芸和支持</a><a href="#sec-appendix">风险说明</a>
+<a href="#sec-1">养生时间线</a><a href="#sec-2">总纲</a><a href="#sec-3">辨证避坑</a><a href="#sec-4">四大观念</a><a href="#sec-5">护心专题</a><a href="#sec-6">外治专区</a><a href="#sec-7">手作专区</a><a href="#sec-8">亲子专题</a><a href="#sec-9">活动手册</a><a href="#sec-10">芸和支持</a><a href="#sec-appendix">风险说明</a>
 </nav>
 <header class="hero">
 <h1>2026冬季养生 · 企业健康文化落地行动指南</h1>
@@ -84,23 +86,8 @@ details.sub .body{padding:6px 14px 14px}
 <div class="wrap">
 <div class="callout"><div class="callout-h">版本说明（融合版）</div><p>本指南为企业冬季健康文化落地方案，内容融合多方中医养生知识与沙龙资料，按<strong>风险分级</strong>标注，方便健康管理员按需转发员工。</p><p>风险等级：<span class="risk risk-A">风险A · 安全可发</span><span class="risk risk-B">风险B · 谨慎转发（请附“个人体质不同，操作前请咨询中医师”）</span></p></div>
 
-<!-- 一、节气时间轴 -->
-<section id="sec-1" class="sec"><h2>一、冬季节气时间轴</h2>
-<div class="tl">
-<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">11月7日 · 立冬</div><p>冬之始，阳气潜藏，水始冰、地始冻。秋“收”转冬“藏”的切换点。</p></div>
-<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">11月22日 · 小雪</div><p>寒未深、雪未大，冷意明显，空气渐干冷。收藏好秋冬衣物。</p></div>
-<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">12月7日 · 大雪</div><p>雪盛，仲冬开启，寒气最重时段正式到来。</p></div>
-<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">12月22日 · 冬至</div><p>白昼最短、一阳生，数九开始，温补最佳起点。</p></div>
-<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">1月5日 · 小寒</div><p>冷气积久，进入一年最冷时段。</p></div>
-<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">1月20日 · 大寒</div><p>二十四节气之末，寒至极、待春回。</p></div>
-</div>
-<div class="callout"><div class="callout-h">《黄帝内经·四气调神大论》：“冬三月，此谓闭藏。水冰地坼，无扰乎阳，早卧晚起，必待日光，使志若伏若匿，若有私意，若已有得；去寒就温，无泄皮肤，此冬气之应，养藏之道也。逆之则伤肾。”</div></div>
-<div class="callout"><div class="callout-h">点睛：立冬养生三字＝<strong>勿扰阳</strong>；冬至“一阳生，助阳帮助阳气火苗生发”。</div></div>
-<div class="callout"><div class="callout-h">💡 一句话：冬天养生的根，是把阳气藏好、不扰动它——下面所有要诀与妙招，都是这一条的展开。</div></div>
-</section>
-
-<!-- 二、三九时间线 -->
-<section id="sec-2" class="sec"><h2>二、三九天时间线</h2>
+<!-- 一、冬季养生时间线（节气嵌入三九） -->
+<section id="sec-1" class="sec"><h2>一、冬季养生时间线</h2>
 <div class="callout"><div class="callout-h">为什么重“三九”</div><p>“夏养三伏、冬养三九”。三九是冬至后最冷的时段，也是“冬病冬治、温阳藏养”的黄金窗口。芸和中医以“助阳内藏而勿用、温而不热、勿扰阳”为核心原则——既保温、又保持该温度，不扰动应藏之阳。本指南以三九为切入，把冬季养生串成一条可落地的线。</p></div>
 <div class="san-banner">冷在三九 · 冬病冬治黄金窗口 27天（12月22日–1月17日）</div>
 <div class="san">
@@ -110,7 +97,9 @@ details.sub .body{padding:6px 14px 14px}
 <div class="san-card"><div class="num">四九（延伸）</div><div class="date">1月18日–1月26日</div><div class="days">9天 · 余寒待春</div></div>
 </div>
 <div class="san-memo">
-<div>✦ 12月22日 冬至：白昼最短、一阳生，温补最佳起点</div>
+<div>✦ 11月7日 立冬：冬之始，秋“收”转冬“藏”的切换点</div>
+<div>✦ 11月22日 小雪、12月7日 大雪：仲冬渐深，寒气日盛</div>
+<div>✦ 12月22日 冬至：白昼最短、一阳生，数九开始，温补最佳起点</div>
 <div>✦ 1月15日 腊八节：正值三九，辛温食养正当时（腊八蒜/腊八粥做法见手作专区）</div>
 <div>✦ 1月5日 小寒、1月20日 大寒：一年最冷两端，三九覆盖其中</div>
 <div>✦ 核心节奏：一九启幕 → 二九深寒 → 三九最冷（温阳重点）→ 四九收尾待春</div>
@@ -118,16 +107,15 @@ details.sub .body{padding:6px 14px 14px}
 <div class="callout"><div class="callout-h">三九落地主线</div><p>外治（艾灸/沐足/搓腰/八贼拍打，见外治专区）→ 手作（姜枣膏/腊八蒜/腊八粥/黑芝麻丸/八珍糕/艾绒腰封，见手作专区）→ 共修（三九27天打卡，见活动手册）→ 护心（见护心专题）。一条线把“养”落到每天。</p></div>
 </section>
 
-<!-- 三、总纲 -->
-<section id="sec-3" class="sec"><h2>三、总纲 · 冬三月养藏</h2>
+<!-- 二、总纲 -->
+<section id="sec-2" class="sec"><h2>二、总纲 · 冬三月养藏</h2>
 <div class="callout"><div class="callout-h">总原则：养肾藏精，护心温通，并行不悖</div><p>冬季在脏为肾，肾主封藏——养肾、藏阳、护住精气，是冬天的根本。但企业健康落地，不能只讲“补肾”：<strong>心主血脉，冬寒收引、气血凝滞，寒邪最易伤的心血脉</strong>。所以冬天既要“肾水藏精”，也要“心火温通”——养肾藏精与护心温通并行，才是完整的冬季养生观。</p></div>
 <div class="callout"><div class="callout-h">《黄帝内经·四气调神大论》：“冬三月，此谓闭藏……去寒就温，无泄皮肤，此冬气之应，养藏之道也。逆之则伤肾。”</div></div>
 <div class="callout"><div class="callout-h">点睛：立冬养生三字＝<strong>勿扰阳</strong>；冬至“一阳生，助阳帮助阳气火苗生发”；而“护好头颈腰足、慢起身、少熬夜”即是护心，养肾与护心本是一体两面。</div></div>
-<p class="note">下面先讲“常见误区”（把错的写在前面），此后的板块都是可以照着做的正确内容。</p>
 </section>
 
-<!-- 四、辨证与避坑（只写误区） -->
-<section id="sec-4" class="sec"><details class="fold"><summary><h2>四、辨证与避坑（常见误区）</h2></summary>
+<!-- 三、辨证与避坑（只写误区） -->
+<section id="sec-2" class="sec"><details class="fold"><summary><h2>三、辨证与避坑（常见误区）</h2></summary>
 <p><strong>🚫 以下这些做法，冬天容易做错，请避开：</strong></p>
 <ul class="bullets"><li>冬天盲目大补猛吃——虚不受补者先伤脾胃，应温补有度、循序渐进</li></ul>
 <ul class="bullets"><li>汗蒸桑拿大汗淋漓——冬主藏，大汗伤阳耗气，微汗即止</li></ul>
@@ -141,7 +129,7 @@ details.sub .body{padding:6px 14px 14px}
 </details></section>
 
 <!-- 五、四大观念 -->
-<section id="sec-5" class="sec"><details class="fold"><summary><h2>五、养生四大观念</h2></summary>
+<section id="sec-2" class="sec"><details class="fold"><summary><h2>四、养生四大观念</h2></summary>
 <p>芸和中医把冬季落地提炼为四大观念，点开每一条看具体怎么做：</p>
 <details class="sub"><summary>① 饮食有节</summary><div class="body">
 <h4 class="tip">温补暖身，宜温忌寒</h4>
@@ -198,7 +186,7 @@ details.sub .body{padding:6px 14px 14px}
 </details></section>
 
 <!-- 六、护心专题 -->
-<section id="sec-6" class="sec"><details class="fold"><summary><h2>六、冬日护心专题</h2></summary>
+<section id="sec-2" class="sec"><details class="fold"><summary><h2>五、冬日护心专题</h2></summary>
 <div class="callout"><div class="callout-h">本专题聚焦“冬季心脑血管防护”。冬季寒邪收引、气血凝滞，心血管事件高发；以下以“认识风险 + 日常防护 + 识别先兆”为主，重在预防与科普，<strong>不替代诊疗</strong>。</div></div>
 <h3>1. 为什么冬季要护心（<span class="risk risk-A">风险A · 安全可发</span>）</h3>
 <ul class="bullets"><li>寒邪内侵：低温使血管收缩、血压波动，加重心脏负荷；温差剧烈易诱发心绞痛、心梗。</li><li>血液变稠：冬季饮水偏少、活动减少，血液黏稠、血流减慢，血栓风险升高。</li><li>中医认识：心主血脉、肾主元气；冬不养藏、阳气亏虚，最易“气滞血瘀、气虚血瘀”。</li><li>💡 转发一句话：冬天护好心，先暖“头颈腰足”、少熬夜、慢起身——防寒就是护血管。</li></ul>
@@ -210,8 +198,8 @@ details.sub .body{padding:6px 14px 14px}
 <ul class="bullets"><li>识别信号：胸骨后压榨性疼痛放射至左肩/下颌、伴冷汗（警惕心绞痛/心梗）；突发眩晕、言语不清、单侧无力（警惕中风）；无诱因持续乏力、夜间阵发性呼吸困难（警惕心衰）。</li><li>✅ 出现以上任一，<strong>立即休息、原地不动、拨打120 / 就近就医</strong>。</li></ul>
 </details></section>
 
-<!-- 七、外治专区 -->
-<section id="sec-7" class="sec"><details class="fold"><summary><h2>七、外治专区</h2></summary>
+<!-- 六、外治专区 -->
+<section id="sec-2" class="sec"><details class="fold"><summary><h2>六、外治专区</h2></summary>
 <div class="callout"><div class="callout-h">外治＝不靠吃药、靠温热与疏通的养生法，冬天最应景。以下为“外治”专列，手作另见下一板块。</div></div>
 
 <h4 class="craft-title">艾叶花椒沐足法 ★</h4>
@@ -243,8 +231,8 @@ details.sub .body{padding:6px 14px 14px}
 <p class="note">空心掌拍打，每处30秒，冬久坐更该拍；皮肤破损、出血倾向者不宜。（风险A · 安全可发）</p>
 </details></section>
 
-<!-- 八、手作专区 -->
-<section id="sec-8" class="sec"><details class="fold"><summary><h2>八、手作专区</h2></summary>
+<!-- 七、手作专区 -->
+<section id="sec-2" class="sec"><details class="fold"><summary><h2>七、手作专区</h2></summary>
 <div class="callout"><div class="callout-h">手作＝健康管理员可组织的“动手做、带回家”小项目，每项独立成卡。难度统一见角标。</div></div>
 
 <h4 class="craft-title">姜枣膏 ★</h4>
@@ -293,8 +281,8 @@ details.sub .body{padding:6px 14px 14px}
 <p class="note">含药材成分，孕妇、服药者及小儿建议先咨询中医师；含糖较高，糖尿病人慎用、不替代治疗。</p>
 </details></section>
 
-<!-- 九、亲子专题 -->
-<section id="sec-9" class="sec"><details class="fold"><summary><h2>九、亲子专题（小儿冬养）</h2></summary>
+<!-- 八、亲子专题 -->
+<section id="sec-2" class="sec"><details class="fold"><summary><h2>八、亲子专题（小儿冬养）</h2></summary>
 <div class="callout"><div class="callout-h">以下为家庭护理参考，症状持续或加重请及时就医。</div></div>
 
 <h4 class="craft-title">小儿感冒（展开看详情）</h4>
@@ -325,8 +313,8 @@ details.sub .body{padding:6px 14px 14px}
 <ul class="bullets"><li>小儿阳气弱，护理无效或起水疱/破溃速就医</li></ul>
 </details></section>
 
-<!-- 十、活动执行手册 -->
-<section id="sec-10" class="sec"><details class="fold"><summary><h2>十、活动执行手册（健康管理员直接用）</h2></summary>
+<!-- 九、活动执行手册 -->
+<section id="sec-2" class="sec"><details class="fold"><summary><h2>九、活动执行手册（健康管理员直接用）</h2></summary>
 <p class="note">🌟 难度：★ 极简 | ★★ 中等 | ★★★ 可组织协调 · 每项均含“准备→执行→物料”全流程</p>
 
 <h4 class="craft-title">活动一：暖身茶饮角 ★</h4>
@@ -530,8 +518,8 @@ details.sub .body{padding:6px 14px 14px}
 </div></details>
 </details></section>
 
-<!-- 十一、芸和可以给到的支持 -->
-<section id="sec-11" class="sec"><details class="fold"><summary><h2>十一、芸和可以给到的支持</h2></summary>
+<!-- 十、芸和可以给到的支持 -->
+<section id="sec-2" class="sec"><details class="fold"><summary><h2>十、芸和可以给到的支持</h2></summary>
 <p style="font-size:13px;color:var(--mut);">你不需要一个人扛，芸和团队在背后支持你：</p>
 <div class="si-grid">
     <div class="si"><div class="si-icon">📖</div><div><div class="si-title">中医养生资源</div>功法视频、养生知识、操作指引</div></div>
